@@ -1,8 +1,10 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const userRoutes = require('./routes/userRoutes');
-const formDataRoutes = require('./routes/formDataRoutes');
 const cors = require('cors');
+const form1Routes = require('./routes/form1routes');
+const form2Routes = require('./routes/form2Routes');
+const form3Routes = require('./routes/form3Routes')
+
 const app = express();
 const port = 5000;
 
@@ -21,8 +23,9 @@ mongoose
 app.use(express.json());
 app.use(cors());
 
-app.use('/api/users', userRoutes);
-app.use('/api/formdata', formDataRoutes);
+app.use('/api/form1', form1Routes);
+app.use('/api/form2', form2Routes);
+app.use('/api/form3', form3Routes);
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
