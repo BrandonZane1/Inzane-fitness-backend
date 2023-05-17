@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const form3Schema = new mongoose.Schema({
   checkbox1: {
@@ -27,6 +27,6 @@ const form3Schema = new mongoose.Schema({
   },
 });
 
-const Form3Data = mongoose.model('Form3Data', form3Schema);
+const Form3Data = mongoose.model("Form3Data", form3Schema);
 
 module.exports = Form3Data;

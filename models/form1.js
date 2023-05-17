@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const form1Schema = new mongoose.Schema({
   firstName: {
@@ -7,6 +7,6 @@ const form1Schema = new mongoose.Schema({
   },
 });
 
-const Form1Data = mongoose.model('Form1Data', form1Schema);
+const Form1Data = mongoose.model("Form1Data", form1Schema);
 
 module.exports = Form1Data;

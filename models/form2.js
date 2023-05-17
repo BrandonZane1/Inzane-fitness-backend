@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const form2DataSchema = new mongoose.Schema({
   checkbox1: Number,
@@ -10,4 +10,4 @@ const form2DataSchema = new mongoose.Schema({
   checkbox7: Number,
 });
 
-module.exports = mongoose.model('Form2Data', form2DataSchema);
+module.exports = mongoose.model("Form2Data", form2DataSchema);
